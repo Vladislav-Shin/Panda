@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('_head.html', { title: 'Ipsum' })
+  <body>
+    <div class="wrapper">
+      @@include('_header.html')
+      <div class="content">
+        @@include('./treatmentLocation/_treatmentLocation.html')
+      </div>
+      @@include('_footer.html')
+    </div>
+
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=0d2db804-33db-441d-a54d-8fc8fa45e591&lang=ru_RU" type="text/javascript"></script>
+    <script src="./js/app.min.js"></script>
+  </body>
+</html>

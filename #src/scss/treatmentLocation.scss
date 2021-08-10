@@ -1,0 +1,163 @@
+.trmnt-loc {
+  .block__wrapper {
+    margin-bottom: 70px;
+  }
+
+  .block__map-wrapper {
+    margin-bottom: 74px;
+    height: 720px;
+
+    @media (max-width: 768px) {
+      height: 400px;
+    }
+  }
+
+  .uk-grid {
+    margin-left: -25px;
+
+    @media (max-width:1440px) {
+      margin-left: -15px;
+    }
+
+    @media (max-width:420px) {
+      margin-left: 0;
+    }
+  }
+
+  .uk-grid>* {
+    padding-left: 25px;
+
+    @media (max-width:1440px) {
+      padding-left: 15px;
+      display: flex;
+      justify-content: center;
+    }
+
+    @media (max-width:420px) {
+      padding-left: 0;
+    }
+  }
+
+  *+.uk-grid-margin {
+    @media (min-width: 1200px) {
+      margin-top: 25px;
+    }
+
+    @media (max-width:1440px) {
+      margin-top: 15px;
+    }
+  }
+
+  .block__card {
+    background: #F6F9FC;
+    box-shadow: none;
+    padding: 20px 20px 35px 20px;
+
+    @media (max-width: 639.5px) {
+      width: 500px;
+    }
+
+    &-img {
+      img {
+        border-radius: 20px;
+      }
+    }
+
+    &-btn {
+      &-call {
+        margin-right: 5px;
+        transform: translateY(-3px);
+      }
+
+      @media (max-width: 425px) {
+        font-size: 14px;
+      }
+
+      @media (max-width: 768px) {
+        font-size: 16px;
+        padding: 10px;
+      }
+    }
+
+    &-pagination {
+      margin-top: 20px;
+
+      @media (max-width: 420px) {
+        justify-content: center;
+      }
+    }
+  }
+
+  .anim__background-mask {
+    top: -105px;
+    left: -140px;
+
+    @media (max-width: 425px) {
+      display: none;
+    }
+  }
+
+  .block__background-anim {
+    position: relative;
+
+    @media (max-width: 425px) {
+      display: none;
+    }
+
+    & .anim__bg-atom {
+      position: absolute;
+      top: -440px;
+      right: -220px;
+    }
+  }
+
+  .anim__background-middle {
+    bottom: 500px;
+    left: -140px;
+    position: absolute;
+
+    @media (max-width: 425px) {
+      display: none;
+    }
+  }
+}
+
+.treatment-location {
+  .block__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .block__card-img {
+    height: 270px;
+    overflow-y: hidden;
+
+    img {
+      height: 100%;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .treatment-location {
+    .block__card {
+      padding: 10px;
+    }
+
+    .block__footer {
+      padding-bottom: 10px;
+    }
+
+    .block__card-btn {
+      border-radius: 10px;
+    }
+  }
+
+}
+
+@media (max-width: 1575px) {
+  .treatment-location .block__card-img {
+    max-height: 240px
+  }
+}

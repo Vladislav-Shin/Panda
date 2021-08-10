@@ -1,0 +1,45 @@
+// Laboratory diagnostic
+.lab-diag {
+  .block__tag {
+    position: absolute;
+    top: -10px;
+    right: 15px;
+    box-shadow: 0px 5px 15px rgba(236, 87, 115, 0.3);
+
+    @media (max-width: 1600px) {
+      font-size: 16px;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 14px;
+    }
+  }
+}
+
+.lab-diag {
+
+  .accord__wrapper {
+    li {
+      position: relative;
+      margin-bottom: 35px;
+    }
+  }
+
+  .lab-price {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    transform: translate(-10%, -50%);
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 166.69%;
+    color: #FFFFFF;
+    background: #FE5E7A;
+    box-shadow: 0px 25px 73px rgba(254, 94, 122, 0.31);
+    border-radius: 84px;
+    padding: 5px 15px;
+  }
+}

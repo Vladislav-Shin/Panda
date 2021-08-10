@@ -1,0 +1,154 @@
+<header class="header">
+  <div class="uk-container uk-container-center">
+    <nav class="uk-navbar-container" uk-navbar>
+      <div class="uk-navbar-left header__logo">
+        <ul class="uk-navbar-nav">
+          <li class="uk-active">
+            <a href="#"><img loading="lazy" src="./img/logo.png" alt="" width="126px" height="72px"/></a>
+          </li> <!-- /uk-active -->
+        </ul> <!-- /uk-navbar-nav -->
+      </div> <!-- /uk-navbar-left header-logo -->
+      <div class="uk-navbar-right">
+        <ul class="uk-navbar-nav">
+          <li class="uk-active">
+            <a class="header__nav-link" href="#">О клинике</a>
+          </li>
+          <li>
+            <div class="uk-inline">
+              <button class="uk-button uk-button-default uk-navbar-nav-dropdown" type="button">Информация</button>
+              <div uk-dropdown>            
+                <a class="header__nav-link" href="#">Услуги и цены</a>
+                <a class="header__nav-link" href="#">Услуги и цены</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a class="header__nav-link" href="#">Пациентам</a>
+          </li>
+          <li>
+            <a class="header__nav-link" href="#">Оптика</a>
+          </li>
+          <li>
+            <a class="header__nav-link" href="#">Контакты</a>
+          </li>
+        </ul>
+
+        <button class="uk-navbar-toggle" type="button" uk-toggle="target: #offcanvas-nav">
+          <svg
+            width="30"
+            height="30"
+            fill="#fff"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect x="2" y="4" width="16" height="1"></rect>
+            <rect x="2" y="9" width="16" height="1"></rect>
+            <rect x="2" y="14" width="16" height="1"></rect>
+          </svg>
+        </button> <!-- /uk-navbar-toogle -->
+        <div class="uk-inline header__lang-changer">
+          <button type="button" class="header__lang-btn">
+            <img loading="lazy" src="./img/englang.png" alt="" width="31px" height="31px" class="header__lang-btn-icon"/>
+            En
+            <img loading="lazy" src="./img/arrowDown.svg" alt="" width="16px" height="25px" class="header__lang-btn-arrow"/>
+          </button>
+          <div class="header__lang-list" type="button" uk-dropdown="mode:click">
+            <ul class="uk-list">
+              <li class="uk-link-reset">
+                <a class="header__nav-link" href="#">
+                  <img loading="lazy" src="./img/englang.png" alt="" width="31px" height="31px"/>
+                  Ru
+                </a>
+              </li>
+              <li class="uk-link-reset">
+                <a class="header__nav-link" href="#">
+                  <img loading="lazy" src="./img/englang.png" alt="" width="31px" height="31px"/>
+                  Uz
+                </a>
+              </li>
+            </ul>
+          </div> <!-- /header__lang-list -->
+
+          <!-- анимация курсора -->
+          <div class="anim-bg3">
+            <img loading="lazy" src="./img/accent.png" alt="" class="header__cursor" width="135px" height="160px"/>
+          </div>
+
+        </div> <!-- /header__lang-changer -->
+      </div> <!-- uk-navbar-right -->
+    </nav>
+  </div>
+
+  <!-- Меню адаптива для мобильных разрешений -->
+  <div id="offcanvas-nav" uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar">
+      <button class="uk-offcanvas-close" type="button">
+        <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <path fill="none" stroke="#fff" stroke-width="1.06" d="M16,16 L4,4"></path>
+          <path fill="none" stroke="#fff" stroke-width="1.06" d="M16,4 L4,16"></path>
+        </svg>
+      </button>
+      <ul class="uk-nav">
+        <li class="uk-active">
+          <a href="#"><img loading="lazy" src="./img/logo.png" alt="" width="126px" height="72px"/></a>
+        </li>
+        <li>
+          <a class="header__nav-link" href="#">О клинике</a>
+        </li>
+        <li>
+          <ul uk-accordion class="header__accordion">
+            <li class='accordion__key'>
+              <a class="uk-accordion-title accordion__item-title" href="#">Services
+              </a>
+                <div class="uk-accordion-content header__accordion-content">
+                    <ul class="submenu__accordion">
+                        <li><a href="#" class="header__nav-link">Documentation</a></li>
+                        <li><a href="#" class="header__nav-link">Design</a></li>
+                        <li><a href="#" class="header__nav-link">Themes</a></li>
+                        <li><a href="#" class="header__nav-link">Illustrations</a></li>
+                        <li><a href="#" class="header__nav-link">UI KIT</a></li>
+                    </ul>
+                </div>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a class="header__nav-link" href="#">Пациентам</a>
+        </li>
+        <li>
+          <a class="header__nav-link" href="#">Оптика</a>
+        </li>
+        <li>
+          <a class="header__nav-link" href="#">Контакты</a>
+        </li>
+      </ul>
+      <div class="uk-flex">
+        <button type="button" class="header__lang-btn">
+          <img loading="lazy" src="./img/englang.png" alt="" width="31px" height="31px" class="header__lang-btn-icon"/>
+          En
+          <img loading="lazy" src="./img/arrowDown.svg" alt="" width="16px" height="25px" class="header__lang-btn-arrow"/>
+        </button>
+        <div class="header__lang-list" type="button" uk-dropdown="mode:click">
+          <ul class="uk-list">
+            <li class="uk-link-reset">
+              <a class="header__nav-link" href="#">
+                <img loading="lazy" src="./img/englang.png" alt="" width="31px" height="31px"/>
+                Ru
+              </a>
+            </li>
+            <li class="uk-link-reset">
+              <a class="header__nav-link" href="#">
+                <img loading="lazy" src="./img/englang.png" alt="" width="31px" height="31px"/>
+                Uz
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header__anim-bg anim-bg">
+    <img loading="lazy" src="./img/Pills.png" alt="" class="anim-bg-pills" width="138px" height="127px"/>
+    <span></span>
+  </div>
+</header>

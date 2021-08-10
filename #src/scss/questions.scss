@@ -1,0 +1,49 @@
+.questions {
+  padding-bottom: 131px;
+  overflow:hidden;
+  &__title {
+    margin-bottom: 73px;
+  }
+  &__theme-nav {
+    margin-bottom: 34px;
+  }
+  .btn {
+    color: #ffffff;
+    box-shadow: 0px 15px 15px rgba(254, 94, 122, 0.31);
+    background: #fe5e7a;
+    padding: 10px 19px;
+    &:hover {
+      background: #0d1026;
+      box-shadow: 0px 15px 15px rgba(36, 36, 36, 0.31);
+      color: #fff;
+    }
+  }
+  & .uk-active>.btn {
+    background-color: #000;
+    box-shadow: 0px 15px 15px rgba(36, 36, 36, 0.31);
+  }
+  & .block__card {
+    background: #F6F9FC;
+    margin-top: 150px;
+  }
+  & .block__card-img {
+    margin-top: -160px;
+    & img {
+      border-radius: 50%;
+      border: 9px solid #fff;
+      filter: drop-shadow(0px 8px 15px rgba(0, 0, 0, 0.12));
+    }
+  }
+  & .anim__background-mask {
+    top: -105px;
+    left: -140px;
+  }
+  & .block__background-anim {
+    position: relative;
+    & .anim__bg-atom {
+      position: absolute;
+      top: -30px;
+      right: -100px;
+    }
+  }
+}

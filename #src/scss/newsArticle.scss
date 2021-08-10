@@ -1,0 +1,107 @@
+// news News-Article
+.news {
+  overflow: hidden;
+  font-family: "Montserrat", sans-serif;
+
+  .block__wrapper {
+    padding: 50px 52px 50px 52px;
+    margin-bottom: 67px;
+    @media (max-width: 768px) {
+      padding: 20px 30px 20px 30px;
+    }
+  }
+
+  .cnt {
+    &__img {
+      min-width: 500px;
+      float: left;
+      margin-right: 35px;
+      
+      @media (max-width: 1366px) {
+        min-width: auto;
+      }
+      @media (max-width: 1024px) {
+        float: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 100%;
+        margin-right: 0;
+        margin-bottom: 15px;
+      }
+      img {
+        border-radius: 10px;
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+    }
+    
+    &__top{
+      &-data{
+        max-width: 70px;
+        background: #DDEAF7;
+        padding: 3px 15px;
+
+        text-align: center;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 166.69%;
+        color: #000000;
+        border-radius: 5px;
+        @media (max-width: 768px) {
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 1.2;
+        }
+      }
+      &-title {
+        font-family: "Montserrat", sans-serif;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 49px;
+        color: #415466;
+        text-align: left;
+        @media (max-width: 768px) {
+          font-size: 20px;
+          line-height: 1.1;
+          margin-bottom: 15px;
+        }
+      }
+    }
+
+    &__text {
+      font-size: 20px;
+      line-height: 39px;
+      color: #000000;
+      @media (max-width: 425px) {
+        font-size: 14px;
+      }
+      @media (max-width: 768px) {
+        font-size: 16px;
+        line-height: 1.2;
+        margin: 20px 0 20px 0;
+      }
+    }
+  }
+  
+
+  & .anim__background-mask {
+    top: -105px;
+    left: -140px;
+  }
+  & .block__background-anim {
+    position: relative;
+    & .anim__bg-atom {
+      position: absolute;
+      top: -140px;
+      right: -220px;
+    }
+  }
+}
+
+
+
+
+
+

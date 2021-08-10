@@ -1,0 +1,333 @@
+.form {
+  padding: 0 0 95px 0;
+  position: relative;
+
+  &__wrapper {
+    height: 461px;
+    border-radius: 34px;
+    background: #fe5e7a;
+    box-shadow: 0 5px 30px rgb(254, 94, 122);
+
+    @media (max-width: 1366px) {
+      height: auto;
+    }
+  }
+
+  // background waves
+  &__background {
+    background: url("../img/waves.png") center no-repeat;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 15px;
+    left: 0;
+    pointer-events: none;
+  }
+
+  &__fields {
+    border-radius: 34px;
+    padding: 56px 65px 56px 65px;
+    z-index: 1;
+    position: relative;
+    @media (max-width: 1024px) {
+      padding: 56px 10px 10px 10px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    font-family: "DM Sans", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+
+    line-height: 99.33%;
+    letter-spacing: -0.025em;
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 45px;
+    color: #ffffff;
+    margin-bottom: 35px;
+    text-align: center;
+
+    @media (max-width: 1366px) {
+      font-size: 3.5vw;
+      margin-bottom: 1vw;
+    }
+
+    @media (max-width: 998px) {
+      font-size: 26px;
+    }
+    @media (max-width: 768px) {
+      font-size: 20px;
+    }
+  }
+
+  &__subtitle {
+    font-size: 35px;
+    color: #ffffff;
+    margin-bottom: 75px;
+    text-align: center;
+    @media (max-width: 1396.5px) {
+      margin-bottom: 40px;
+    }
+    @media (max-width: 1366px) {
+      margin-bottom: 0;
+      font-size: 2.5vw;
+    }
+    @media (max-width: 998px) {
+      font-size: 21px;
+    }
+    @media (max-width: 768px) {
+      font-size: 18px;
+      line-height: 1.1;
+    }
+  }
+
+  &__inputs {
+    justify-content: space-around;
+    width: 100%;
+
+    @media (max-width: 1024px) {
+      flex-direction: column;
+      width: 80%;
+      justify-content: center;
+      align-items: center;
+      &>.form__input-name, .form__input-tel  {
+        width: 100%;
+      }
+    }
+  }
+  
+  // input of forms
+  &__input {
+    background: #ffffff;
+    border-radius: 8px;
+    height: 70px;
+
+    font-family: "DM Sans", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 99.33%;
+    letter-spacing: -0.025em;
+    color: #000000;
+
+    @media (max-width: 1024px) {
+      margin-right: 0;
+    }
+
+    &:first-child {
+      @media (max-width: 1024px) {
+        margin-bottom: 20px;
+        font-size: 3vw;
+      }
+    }
+
+    // placeholder of inputs
+    &::placeholder {
+      color: rgb(114, 114, 114);
+      @media (max-width: 768px) {
+        line-height: 1;
+        font-size: 20px;
+      }
+      @media (max-width: 425px) {
+        line-height: 1;
+        font-size: 15px;
+      }
+    }
+
+    &:focus {
+      color: #000;
+    }
+
+    // container of input field
+    &-tel, &-name {
+      position: relative;
+      margin-right: 30px;
+      @media (max-width: 1023.5px) {
+        margin-right: 0;
+      }
+    }
+
+    // laber of error while you input smth wrong
+    &-error {
+      background: #333;
+      border-radius: 12px;
+      width: 100%;
+      min-height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+      opacity: 0;
+      font-size: 0;
+      color: #fff;
+      line-height: 1;
+    
+      position: absolute;
+      top: -40px;
+      left: 0px;
+      z-index: 1;
+      padding: 5px 8px;
+      margin-left: -8px;
+      transition: opacity 0.3s linear;
+      @media (max-width: 1366.5px) {
+        top: -17px;
+      }
+    
+      &._error{
+        font-size: 15px;
+        opacity: 1;
+        @media (max-width: 768px) {
+          font-size: 12px;
+          min-height: 25px;
+          padding: 3px 5px;
+          margin-left: -5px;
+        }
+      }
+    }
+  }
+
+  //  submit form btn
+  &__btn {
+    background: #0d1026;
+    border-radius: 8px;
+    border: none;
+    transition-property: background;
+    transition-duration: 0.5s;
+
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30.6714px;
+    line-height: 128.69%;
+    color: #ffffff;
+    
+    &:hover {
+      color: #ffffff;
+      background: rgb(148, 15, 15);
+    }
+    &:focus {
+      border: none;
+      box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    @media (max-width: 1024px) {
+      width: 50%;
+      font-size: 2vw;
+      padding: 5px;
+    }
+    @media (max-width: 768px) {
+      font-size: 16px;
+    }
+  }
+
+  // ARM----BG-----------------------
+  &__background-arm {
+    position: absolute;
+    pointer-events: none;
+    z-index: 2;
+    width: 457px;
+    height: auto;
+
+    left: -105px;
+    bottom: -510px;
+    @media (max-width: 1366px) {
+       bottom: -550px;
+    }
+    @media (max-width: 1024px) {
+      width: 357px;
+      bottom: -440px;
+    }
+    @media (max-width: 720px) {
+      width: 257px;
+      bottom: -305px;
+    }
+    @media (max-width: 480px) {
+      width: 157px;
+      bottom: -170px;
+      left: -70px;
+    }
+  }
+
+  // while you sending notification modal window
+  &__notification {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-1000px);
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.85);
+    overflow-y: hidden;
+    z-index: 11;
+    transition: opacity .3s linear;
+    
+    // show notitification
+    &._show {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    &-sended {
+      background: rgba(31, 179, 122, 0.88);
+      border-radius: 10px;
+      padding: 20px;
+      width: 400px;
+      height: 200px;
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    
+      text-align: center;
+      color: #fff;
+      font-size: 20px;
+      line-height: 1.1;
+
+      position: relative;
+      top: 50%;
+      left: 50%;
+      right: 50%;
+      transform: translate(-50%, -50%);
+      @media (max-width: 768px) {
+        transform: translate(0,0);
+        top: 0;
+        left: 0;
+        right: 0;
+        font-size: 16px;
+        margin-bottom: 0;
+        line-height: 1;
+        width: auto;
+      }
+      // error notification
+      &-error {
+        background: rgba(179, 31, 31, 0.88);
+      }
+    }
+
+    &-close-btn {
+      position: absolute;
+      z-index: 1000;
+      top: 20px;
+      right: 20px;
+      padding: 5px;
+      border-radius: 50%;
+      background: #ffffff;
+      border: none;
+      -webkit-box-shadow: 0 0 10px #fe5e796c;
+      box-shadow: 0 0 10px #fe5e796c;
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,139 @@
+.our-location {
+  padding-bottom: 130px;
+
+  & .anim__background-mask {
+    top: -105px;
+    left: -140px;
+  }
+
+  &__map {
+    position: relative;
+
+    &-wrapper {
+      position: relative;
+      height: 720px;
+      border-radius: 23px;
+      overflow: hidden;
+
+      @media (max-width: 1023.9px) {
+        border-radius: 23px 23px 0 0;
+      }
+
+      @media (max-width: 768px) {
+        height: 360px;
+      }
+
+    }
+    & .desc__map {
+      max-width: 50%;
+      // width: 50%;
+      background: #ffffff;
+      box-shadow: 0px 24px 40px rgba(0, 0, 0, 0.2);
+
+      padding: 40px 0 40px 0;
+      border-radius: 23px;
+      z-index: 1;
+      position: absolute;
+      bottom: 25px;
+      right: 25px;
+
+      @media (max-width: 1600px) {
+        padding: 10px 0;
+        right: 10px;
+        bottom: 10px;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+      }
+
+      @media (max-width: 1023.9px) {
+        padding: 20px;
+        border-radius: 0 0 23px 23px;
+        max-width: 100%;
+        position: initial;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      // оболочка информации о карте
+      &-wrapper {
+        margin-left: 0;
+
+        
+        & .cont__map {
+          font-family: "Poppins", sans-serif;
+
+          @media (max-width: 1600px) {
+            padding-left: 15px;
+          }
+
+          @media (max-width: 768px) {
+            padding-left: 10px;
+          }
+
+          @media (max-width: 420px) {
+            padding-left: 0;
+          }
+
+          // отступ справа у правой колонки
+          &:not(.uk-first-column) {
+
+            @media (max-width: 1600px) {
+              padding-right: 15px;
+            }
+
+            @media (max-width: 768px) {
+              padding-right: 10px;
+            }
+          }
+
+          // верхний отступ кроме первого блока - картинки логотипа
+          &:not(:first-child) {
+            margin-top: 30px;
+
+            @media (max-width: 1600px) {
+              margin-top: 20px;
+            }
+
+            @media (max-width: 768px) {
+              margin-top: 10px;
+            }
+          }
+
+          &-icon {
+            margin-right: 10px;
+            @media (max-width: 420px) {
+              display: none;;
+            }
+            img {
+              min-width: 31px;
+            }
+          }
+
+          // оболочка блоков с текстом
+          &-wrapper {
+            min-width: 50%;
+          }
+          
+          &-title {
+            font-size: 20px;
+            line-height: 30px;
+            color: #fe5e7a;
+          }
+
+          &-text {
+            font-size: 17px;
+            line-height: 25px;
+            width: 100%;
+            word-wrap: break-word;
+            color: #000000;
+          }
+        } // </ cont__map>
+
+        & .uk-first-column {
+          padding-right: 0;
+        }
+
+      } // </ desc__map-wrapper>
+    } // </ desc__map>
+  } // </our__location-map>
+} // </our__location>

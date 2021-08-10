@@ -1,0 +1,126 @@
+// ta treatment-article
+.ta {
+  // padding-bottom: 131px;
+  overflow: hidden;
+  font-family: "Montserrat", sans-serif;
+  .block__wrapper {
+    padding: 50px 52px 50px 52px;
+    margin-bottom: 67px;
+    @media (max-width: 768px) {
+      padding: 20px 30px 20px 30px;
+    }
+  }
+  .block__title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 49px;
+    color: #415466;
+    @media (max-width: 768px) {
+      font-size: 20px;
+      line-height: 1.1;
+      margin-bottom: 15px;
+    }
+  }
+
+  .block__subtitle {
+    font-family: "Montserrat", sans-serif;
+    @media (max-width: 768px) {
+      font-size: 14px;
+      line-height: 1.1;
+    }
+  }
+
+  &__tag {
+    margin-top: 20px;
+    box-shadow: 0px 15px 15px rgba(254, 94, 122, 0.31);
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    
+    transition: transform .5s linear;
+    &:hover {
+      color: #fff;
+      text-decoration: none;
+      @media (min-width: 1199.5px) {
+        transform: translateY(-5px);
+      }
+    }
+    @media (max-width: 768px) {
+      font-size: 14px;
+      line-height: 1.1;
+      margin-top: 5px;
+    }
+  }
+
+  &__content {
+    margin: 47px 0 20px 0;
+
+    font-size: 20px;
+    line-height: 39px;
+    color: #000000;
+    @media (max-width: 425px) {
+      font-size: 14px;
+    }
+    @media (max-width: 768px) {
+      font-size: 16px;
+      line-height: 1.5;
+      margin: 20px 0 20px 0;
+    }
+    img {
+      border-radius: 23px;
+    }
+  }
+  & .anim__background-mask {
+    top: -105px;
+    left: -140px;
+  }
+  & .block__background-anim {
+    position: relative;
+    & .anim__bg-atom {
+      position: absolute;
+      top: -140px;
+      right: -220px;
+    }
+  }
+
+  // Symptoms
+  &__symptoms {
+    padding-bottom: 25px;
+    @media (max-width: 768px) {
+      padding-bottom: 15px;
+    }
+    p {
+      font-size: 20px;
+      line-height: 39px;
+      color: #000000;
+      @media (max-width: 768px) {
+        font-size: 16px;
+        line-height: 1.5;
+      }
+      @media (max-width: 425px) {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .treatment {
+    p {
+      color: #000;
+      line-height: 1.5;
+    }
+  }
+
+  .uk-subnav-pill > .uk-active > a {
+    background: #0d1026;
+    box-shadow: 0px 15px 15px rgba(36, 36, 36, 0.31);
+    color: #fff;
+  }
+}
+
+
+
+
+
+
