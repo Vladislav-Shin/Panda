@@ -15438,6 +15438,7 @@ header {
 .anim__background {
   position: relative;
   z-index: 1;
+  pointer-events: none;
 }
 
 .anim__background-mask {
@@ -16287,6 +16288,8 @@ header {
 .intro .intro__items .intro__item-content img {
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .intro .intro__item-title {
@@ -16346,6 +16349,7 @@ header {
 .intro-mod .intro__item-inner .intro__inner-content {
   border-radius: 23px;
   overflow: hidden;
+  height: 235px;
 }
 
 .intro-mod .intro__item-inner .intro__inner-content img {
@@ -20083,6 +20087,32 @@ header {
     font-size: 120px;
   }
 
+  .intro .intro__items:last-child {
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .intro .intro__items:last-child .intro__item-content {
+    width: 49%;
+    height: 280px;
+  }
+
+  .intro .intro__items:last-child .intro__item-header {
+    width: 49%;
+  }
+
+  .intro .intro__items:last-child .intro__item-header .intro__item-title {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 20px;
+  }
+
   .intro-mod .intro__item-inner:first-child {
     height: 35%;
   }
@@ -20695,6 +20725,8 @@ header {
 
   .intro .intro-mod-bottom .intro__inner-content img {
     height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 
@@ -21144,6 +21176,11 @@ header {
   .intro .intro__item-title {
     font-size: 20px;
   }
+
+  .intro .intro__items:last-child .intro__item-header .intro__item-title {
+    text-align: left;
+    font-size: 28px;
+  }
 }
 
 @media (max-width: 720px) {
@@ -21229,6 +21266,27 @@ header {
 
   .intro .intro__item-inner {
     margin-bottom: 20px;
+  }
+
+  .intro .intro__items:last-child {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .intro .intro__items:last-child .intro__item-content,
+  .intro .intro__items:last-child .intro__item-header {
+    width: 100%;
+  }
+
+  .intro .intro__items:last-child .intro__item-header .intro__item-title {
+    font-size: 26px;
+    margin-top: 0;
+  }
+
+  .intro .intro__items:last-child {
+    margin-top: -25px;
   }
 }
 
