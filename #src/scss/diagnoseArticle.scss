@@ -2,19 +2,27 @@
 .da {
   overflow: hidden;
   font-family: "Montserrat", sans-serif;
+
   .block__wrapper {
     padding: 48px 52px 50px 52px;
     margin-bottom: 67px;
+
     @media (max-width: 768px) {
       padding: 20px 30px 20px 30px;
     }
+
+    .uk-subnav>* {
+      margin-bottom: 10px;
+    }
   }
+
   .block__title {
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
     font-size: 40px;
     line-height: 49px;
     color: #415466;
+
     @media (max-width: 768px) {
       font-size: 20px;
       line-height: 1.1;
@@ -24,6 +32,7 @@
 
   .block__subtitle {
     font-family: "Montserrat", sans-serif;
+
     @media (max-width: 768px) {
       font-size: 14px;
       line-height: 1.1;
@@ -37,13 +46,16 @@
     margin-top: 20px;
     cursor: pointer;
     transition: transform .5s linear;
+
     &:hover {
-    color: #fff;
-    text-decoration: none;
+      color: #fff;
+      text-decoration: none;
+
       @media (min-width: 1199.5px) {
         transform: translateY(-5px);
       }
     }
+
     @media (max-width: 768px) {
       font-size: 14px;
       line-height: 1.1;
@@ -57,12 +69,13 @@
     font-size: 20px;
     line-height: 39px;
     color: #000000;
-    
+
     @media (max-width: 768px) {
       font-size: 16px;
       line-height: 1.5;
       margin: 20px 0 20px 0;
     }
+
     @media (max-width: 425px) {
       font-size: 14px;
     }
@@ -70,6 +83,7 @@
 
   &__symptoms {
     margin-top: 40px;
+
     @media (max-width: 768px) {
       margin-top: 30px;
     }
@@ -80,8 +94,10 @@
     top: -105px;
     left: -140px;
   }
+
   & .block__background-anim {
     position: relative;
+
     & .anim__bg-atom {
       position: absolute;
       top: -140px;
@@ -95,9 +111,103 @@
     }
   }
 
-  .uk-subnav-pill > .uk-active > a {
+  .uk-subnav-pill>.uk-active>a {
     background: #0d1026;
     box-shadow: 0px 15px 15px rgba(36, 36, 36, 0.31);
     color: #fff;
   }
 }
+
+@media (max-width: 930px) {
+  .diagnose-article,
+  .our-labaratory,
+  .treatment-article {
+    .accord__wrapper ul li {
+      padding: 25px;
+
+      .accordion__item-title {
+        margin-left: -35px;
+        padding-left: 80px;
+        line-height: 21px;
+        padding-bottom: 2px;
+      }
+    }
+
+    .lab-diag .lab-price {
+      padding: 5px 10px;
+      font-size: 16px;
+    }
+
+    .uk-accordion-title::before {
+      width: 1.1em;
+      height: 1.1em;
+    }
+
+    .block__title {
+      margin-bottom: 35px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .diagnose-article, 
+  .our-labaratory,
+  .questions,
+  .treatment-article .block__title {
+    margin-bottom: 35px;
+  }
+
+  .diagnose-article, 
+  .our-labaratory,
+  .questions,
+  .treatment-article {
+    .js-filter {
+      width: 100%;
+    }
+  }
+}
+
+
+@media (max-width: 650px) {
+  .diagnose-article,
+  .our-labaratory,
+  .questions,
+  .treatment-article {
+    .accord__wrapper {
+      flex-direction: column;
+
+      ul {
+        width: 100%;
+      }
+    }
+
+    .block__title {
+      margin-bottom: 35px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .diagnose-article,
+  .questions,
+  .our-labaratory,
+  .treatment-article {
+
+    .accord__wrapper {
+
+      .uk-accordion-title {
+        font-size: 19px;
+      }
+    }
+    
+    .uk-subnav {
+      justify-content: left;
+      
+      li {
+        margin-bottom: 10px;
+      }
+
+    }
+  }
+}
+

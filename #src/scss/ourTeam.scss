@@ -2,7 +2,7 @@
   padding-bottom: 131px;
   & .block__card {
     background: #F6F9FC;
-    margin-top: 150px;
+    margin-top: 190px;
     padding: 10px 10px 30px 10px;
   }
   & .block__card-img {
@@ -48,6 +48,9 @@
       width: 160px;
       height: 160px;
       margin-top: -105px;
+    }
+    .block__card {
+      margin-top: 100px;
     }
   }
 }
