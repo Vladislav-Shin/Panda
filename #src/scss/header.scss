@@ -184,8 +184,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 136.06px;
-    height: 59px;
+    width: 110px;
+    height: 50px;
     background: #fe5e7a;
     box-shadow: 0px 31px 45px -18px rgba(89, 86, 233, 0.44);
     border-radius: 30px;
@@ -277,4 +277,5 @@
   z-index: 1;
   width: 135px;
   height: 160px;
+  object-fit: cover;
 }

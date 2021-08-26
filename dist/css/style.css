@@ -15565,6 +15565,19 @@ header {
 
 /* uikit */
 
+.web .adv__card-icon {
+  width: 145px;
+  height: 220px;
+}
+
+.content .form__wrapper {
+  height: 100%;
+}
+
+.content .form__fields {
+  padding-bottom: 35px;
+}
+
 .accordion__btns > li {
   margin-top: 5px;
 }
@@ -15875,8 +15888,8 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 136.06px;
-  height: 59px;
+  width: 110px;
+  height: 50px;
   background: #fe5e7a;
   -webkit-box-shadow: 0px 31px 45px -18px rgba(89, 86, 233, 0.44);
           box-shadow: 0px 31px 45px -18px rgba(89, 86, 233, 0.44);
@@ -15962,6 +15975,8 @@ header {
   z-index: 1;
   width: 135px;
   height: 160px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /* INTRO Content */
@@ -16293,7 +16308,6 @@ header {
 }
 
 .intro .intro__item-title {
-  font-family: "Poppins";
   font-style: normal;
   font-weight: bold;
   font-size: 31px;
@@ -16357,7 +16371,6 @@ header {
 }
 
 .intro-mod .intro__item-inner p {
-  font-family: "Poppins";
   font-style: normal;
   font-weight: bold;
   font-size: 31px;
@@ -16877,6 +16890,11 @@ header {
   height: 248px;
 }
 
+.experts__swiper .experts__swiper-position,
+.experts__swiper .experts__swiper-name {
+  margin-bottom: 10px;
+}
+
 .swiper-slide-next,
 .swiper-slide-active,
 .swiper-slide-prev {
@@ -16969,7 +16987,12 @@ header {
   height: 270px;
 }
 
+.treatment-nav .block__card-img picture {
+  width: 100%;
+}
+
 .treatment-nav .block__card-img img {
+  width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -17457,6 +17480,8 @@ header {
 
 .lab-res__advantages .adv__card-icon {
   margin-bottom: 15px;
+  width: 220px;
+  height: 145px;
 }
 
 .lab-res__advantages .adv__card-title {
@@ -17465,13 +17490,19 @@ header {
   font-size: 22px;
   color: #2E2E46;
   margin-bottom: 10px;
+  text-align: center;
+}
+
+.lab-res__advantages .adv__card-text {
+  text-align: center;
 }
 
 .lab-res .block__card {
   background: #F6F9FC;
   -webkit-box-shadow: none;
           box-shadow: none;
-  padding: 20px 20px 35px 20px;
+  padding: 20px 20px 20px 20px;
+  margin-bottom: 20px;
 }
 
 .lab-res .block__card-img {
@@ -17484,6 +17515,7 @@ header {
 }
 
 .lab-res .block__card-title {
+  margin-top: 0;
   color: #171717;
 }
 
@@ -17529,7 +17561,7 @@ header {
   -webkit-transition: opacity .3s linear;
   -o-transition: opacity .3s linear;
   transition: opacity .3s linear;
-  padding-top: 5vh;
+  padding-top: 20vh;
 }
 
 .lab-res .form._visible {
@@ -18011,6 +18043,10 @@ header {
   right: -220px;
 }
 
+.footer .footer__content-top {
+  border-bottom: 1px solid rgba(105, 120, 131, 0.4);
+}
+
 .footer__content {
   background: #FE5E7A;
   width: 100%;
@@ -18278,47 +18314,16 @@ header {
 
 .logo__panda .btn {
   position: relative;
+  display: inline-block;
   width: 180px;
   height: 60px;
   cursor: pointer;
-  background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#8d8d99));
-  background: -o-linear-gradient(top, #000, #8d8d99);
-  background: linear-gradient(180deg, #000, #8d8d99);
+  background: transparent;
   outline: none;
   -webkit-transition: 1s ease-in-out;
   -o-transition: 1s ease-in-out;
   transition: 1s ease-in-out;
   border-radius: 5px;
-}
-
-.logo__panda svg {
-  position: absolute;
-  left: 0;
-  top: 0;
-  fill: none;
-  stroke: #fff;
-  stroke-dasharray: 150 480;
-  stroke-dashoffset: 150;
-  -webkit-transition: 1s ease-in-out;
-  -o-transition: 1s ease-in-out;
-  transition: 1s ease-in-out;
-  border-radius: 5px;
-}
-
-.logo__panda .btn:hover {
-  -webkit-transition: 1s ease-in-out;
-  -o-transition: 1s ease-in-out;
-  transition: 1s ease-in-out;
-}
-
-.logo__panda .btn:hover svg {
-  stroke-dashoffset: -480;
-}
-
-.logo__panda .btn a {
-  color: white;
-  font-size: 18px;
-  font-weight: 100;
 }
 
 @media (min-width: 480px) {

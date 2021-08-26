@@ -334,7 +334,22 @@ header {
   }
 }
 
+.web {
+  .adv__card-icon {
+    width: 145px;
+    height: 220px;
+  }
+}
 
+.content {
+  .form__wrapper {
+    height: 100%;
+  }
+
+  .form__fields  {
+    padding-bottom: 35px;
+  }
+}
 
 
 @import "accordion";
