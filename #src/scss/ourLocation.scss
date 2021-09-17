@@ -25,7 +25,7 @@
 
     }
     & .desc__map {
-      max-width: 50%;
+      max-width: 52%;
       // width: 50%;
       background: #ffffff;
       box-shadow: 0px 24px 40px rgba(0, 0, 0, 0.2);
@@ -112,6 +112,10 @@
           // оболочка блоков с текстом
           &-wrapper {
             min-width: 50%;
+
+            a {
+              color: #000;
+            }
           }
           
           &-title {
@@ -125,7 +129,10 @@
             line-height: 25px;
             width: 100%;
             word-wrap: break-word;
-            color: #000000;
+
+            a {
+              color: #000;
+            }
           }
         } // </ cont__map>
 

@@ -15555,14 +15555,6 @@ header {
   transition: box-shadow 0.5s linear, background-color 0.5s linear, -webkit-box-shadow 0.5s linear;
 }
 
-.btn:hover {
-  background: #0d1026;
-  -webkit-box-shadow: 0px 15px 15px rgba(36, 36, 36, 0.31);
-          box-shadow: 0px 15px 15px rgba(36, 36, 36, 0.31);
-  text-decoration: none;
-  color: #fff;
-}
-
 /* uikit */
 
 .web .adv__card-icon {
@@ -15576,6 +15568,19 @@ header {
 
 .content .form__fields {
   padding-bottom: 35px;
+}
+
+.content .social-link a i {
+  color: #000;
+  font-size: 20px;
+}
+
+.header .header__lang-btn {
+  height: 40px;
+}
+
+.header .uk-navbar-nav li {
+  padding-right: 0;
 }
 
 .accordion__btns > li {
@@ -15768,7 +15773,7 @@ header {
 
 .uk-navbar-right > .uk-navbar-nav > li {
   padding: 0;
-  padding: 0 5px 0 0;
+  padding: 0 0 0 0;
 }
 
 .uk-navbar-right > .uk-navbar-nav > li .header__nav-link,
@@ -15776,14 +15781,14 @@ header {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 27px;
   text-transform: none;
   text-decoration: none;
   color: #000000;
-  padding: 0 10px;
+  padding: 0 8px;
   border-radius: 30px;
-  height: 59px;
+  height: 40px;
   min-height: auto;
   -webkit-transition: background .5s linear, color .5s linear, opacity .5s linear;
   -o-transition: background .5s linear, color .5s linear, opacity .5s linear;
@@ -15919,10 +15924,6 @@ header {
 .header__lang-btn-icon {
   border-radius: 50%;
   margin-right: 10px;
-}
-
-.header__lang-btn-arrow {
-  margin-left: 10px;
 }
 
 .header__anim-bg {
@@ -17133,7 +17134,7 @@ header {
 }
 
 .our-location__map .desc__map {
-  max-width: 50%;
+  max-width: 52%;
   background: #ffffff;
   -webkit-box-shadow: 0px 24px 40px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 24px 40px rgba(0, 0, 0, 0.2);
@@ -17169,6 +17170,10 @@ header {
   min-width: 50%;
 }
 
+.our-location__map .desc__map-wrapper .cont__map-wrapper a {
+  color: #000;
+}
+
 .our-location__map .desc__map-wrapper .cont__map-title {
   font-size: 20px;
   line-height: 30px;
@@ -17180,7 +17185,10 @@ header {
   line-height: 25px;
   width: 100%;
   word-wrap: break-word;
-  color: #000000;
+}
+
+.our-location__map .desc__map-wrapper .cont__map-text a {
+  color: #000;
 }
 
 .our-location__map .desc__map-wrapper .uk-first-column {
@@ -18044,7 +18052,16 @@ header {
 }
 
 .footer .footer__content-top {
-  border-bottom: 1px solid rgba(105, 120, 131, 0.4);
+  /*     border-bottom: 1px solid rgba(105, 120, 131, 0.4);
+ */
+}
+
+.footer .like__button i {
+  color: #fff;
+}
+
+.footer .like__button:hover {
+  text-decoration: none;
 }
 
 .footer__content {
@@ -18091,6 +18108,11 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.footer__content-top > .left-side > .social-links i {
+  color: #fff;
+  font-size: 24px;
 }
 
 .footer__content-top > .left-side > .social-links > .social-link {

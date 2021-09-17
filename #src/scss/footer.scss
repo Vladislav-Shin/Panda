@@ -1,7 +1,19 @@
 .footer {
+
+
   .footer__content-top {
-    border-bottom: 1px solid rgba(105, 120, 131, 0.4);
-  }
+/*     border-bottom: 1px solid rgba(105, 120, 131, 0.4);
+ */  }
+
+ .like__button {
+   i {
+     color: #fff;
+   }
+
+   &:hover {
+     text-decoration: none;
+   }
+ }
 
   &__content {
     background: #FE5E7A;
@@ -65,6 +77,11 @@
 
       &>.social-links {
         display: flex;
+
+        i {
+          color: #fff;
+          font-size: 24px;
+        }
 
         &>.social-link {
           transition: transform .5s linear;
