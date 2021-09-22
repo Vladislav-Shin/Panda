@@ -5,6 +5,30 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto",
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+/* 
+img,
+picture {
+  width: 100%;
+  height: 100%;
+} */
+
+.btn {
+  transition: all 0.1s linear;
+}
+
+.btn:hover {
+  text-decoration: none;
+  background: #7d7e86;
+  color: #fff;
+  box-shadow: 0 15px 15px rgba(#7d7e86, 0.3);
+  transition: all 0.3s linear;
+}
+
 body._lock,
 .form._lock {
   overflow-y: hidden !important;
@@ -170,6 +194,25 @@ header {
   height: 100%;
 }
 
+.content {
+  .block__card {
+    height: 100%;
+  }
+}
+
+.our-lab__team {
+  .tm__card {
+    .cnt-position {
+      margin-bottom: 10px;
+    }
+    .cnt-name {
+      margin-bottom: 10px;
+    }
+    .cnt-description {
+      margin-bottom: 10px;
+    }
+  }
+}
 //  -------------animated background pictures --------------
 .anim__background {
   position: relative;
@@ -349,6 +392,36 @@ header {
         font-size: 20px;
       }
     }
+  }
+
+  .cnt__img {
+    height: 500px;
+
+    img,
+    picture {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .block__layout {
+    margin-bottom: 15px;
+  }
+}
+
+.our-team {
+  
+}
+
+@media (width: 769px) {
+  .cnt_img {
+    height: 350px;
+  }
+}
+
+@media (width: 480px) {
+  .cnt_img {
+    height: 250px;
   }
 }
 

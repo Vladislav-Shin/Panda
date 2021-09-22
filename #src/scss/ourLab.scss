@@ -128,7 +128,7 @@
         }
   
         &-text {
-          font-size: 13px;
+          font-size: 19px;
           line-height: 160%;
           letter-spacing: 0.004em;
           color: rgba(57, 57, 57, 0.6);
@@ -137,7 +137,7 @@
         }
   
         &-btn {
-          font-size: 14px;
+          font-size: 17px;
           line-height: 160%;
           color: #FD9790;
         }
@@ -191,6 +191,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-left: 40px;
+    padding-right: 40px;
     min-height: 255px;
     background: #FE5E7A;
     width: 100%;

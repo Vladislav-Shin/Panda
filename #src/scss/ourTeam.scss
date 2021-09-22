@@ -4,6 +4,7 @@
     background: #F6F9FC;
     margin-top: 190px;
     padding: 10px 10px 30px 10px;
+    height: auto;
   }
   & .block__card-img {
     margin-top: -160px;
@@ -24,6 +25,14 @@
       top: -140px;
       right: -220px;
     }
+  }
+
+/*   .block__layout>div {
+    margin-bottom: 150px;
+  } */
+  .block__card-description {
+    padding-left: 12px;
+    padding-right: 12px;
   }
 }
 

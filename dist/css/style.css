@@ -15291,6 +15291,34 @@ iframe.uk-cover {
           box-sizing: border-box;
 }
 
+body {
+  font-family: "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+/* 
+img,
+picture {
+  width: 100%;
+  height: 100%;
+} */
+
+.btn {
+  -webkit-transition: all 0.1s linear;
+  -o-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
+.btn:hover {
+  text-decoration: none;
+  background: #7d7e86;
+  color: #fff;
+  -webkit-box-shadow: 0 15px 15px rgba(125, 126, 134, 0.3);
+          box-shadow: 0 15px 15px rgba(125, 126, 134, 0.3);
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
 body._lock,
 .form._lock {
   overflow-y: hidden !important;
@@ -15435,6 +15463,22 @@ header {
   height: 100%;
 }
 
+.content .block__card {
+  height: 100%;
+}
+
+.our-lab__team .tm__card .cnt-position {
+  margin-bottom: 10px;
+}
+
+.our-lab__team .tm__card .cnt-name {
+  margin-bottom: 10px;
+}
+
+.our-lab__team .tm__card .cnt-description {
+  margin-bottom: 10px;
+}
+
 .anim__background {
   position: relative;
   z-index: 1;
@@ -15573,6 +15617,20 @@ header {
 .content .social-link a i {
   color: #000;
   font-size: 20px;
+}
+
+.content .cnt__img {
+  height: 500px;
+}
+
+.content .cnt__img img,
+.content .cnt__img picture {
+  width: 100%;
+  height: 100%;
+}
+
+.content .block__layout {
+  margin-bottom: 15px;
 }
 
 .header .header__lang-btn {
@@ -15923,7 +15981,7 @@ header {
 
 .header__lang-btn-icon {
   border-radius: 50%;
-  margin-right: 10px;
+  /* margin-right: 10px; */
 }
 
 .header__anim-bg {
@@ -17001,12 +17059,16 @@ header {
 
 .our-team {
   padding-bottom: 131px;
+  /*   .block__layout>div {
+    margin-bottom: 150px;
+  } */
 }
 
 .our-team .block__card {
   background: #F6F9FC;
   margin-top: 190px;
   padding: 10px 10px 30px 10px;
+  height: auto;
 }
 
 .our-team .block__card-img {
@@ -17033,6 +17095,11 @@ header {
   position: absolute;
   top: -140px;
   right: -220px;
+}
+
+.our-team .block__card-description {
+  padding-left: 12px;
+  padding-right: 12px;
 }
 
 .our-team .block__card-img {
@@ -17441,6 +17508,10 @@ header {
   font-family: "Montserrat", sans-serif;
 }
 
+.lab-res .block__layout > div {
+  margin-bottom: 15px;
+}
+
 .lab-res__wrapper {
   background: #f7fafe;
 }
@@ -17488,8 +17559,8 @@ header {
 
 .lab-res__advantages .adv__card-icon {
   margin-bottom: 15px;
-  width: 220px;
-  height: 145px;
+  /* width: 220px; */
+  height: 170px;
 }
 
 .lab-res__advantages .adv__card-title {
@@ -17809,7 +17880,7 @@ header {
 }
 
 .our-lab__specialization .our-lab__specs .card-spec-text {
-  font-size: 13px;
+  font-size: 19px;
   line-height: 160%;
   letter-spacing: 0.004em;
   color: rgba(57, 57, 57, 0.6);
@@ -17817,7 +17888,7 @@ header {
 }
 
 .our-lab__specialization .our-lab__specs .card-spec-btn {
-  font-size: 14px;
+  font-size: 17px;
   line-height: 160%;
   color: #FD9790;
 }
@@ -17860,6 +17931,8 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-left: 40px;
+  padding-right: 40px;
   min-height: 255px;
   background: #FE5E7A;
   width: 100%;
@@ -17998,15 +18071,18 @@ header {
 
 .news .cnt__img {
   min-width: 500px;
+  height: 400px;
   float: left;
   margin-right: 35px;
 }
 
 .news .cnt__img img {
   border-radius: 10px;
+  height: 100%;
   width: 100%;
-  height: auto;
   display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .news .cnt__top-data {
@@ -20207,7 +20283,8 @@ header {
   }
 
   .news .cnt__img {
-    min-width: auto;
+    /*         min-width: auto;
+ */
   }
 }
 
@@ -21478,6 +21555,10 @@ header {
     margin-bottom: 35px;
   }
 
+  .news .cnt__img {
+    height: 250px;
+  }
+
   .footer__content-bottom {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
@@ -22002,6 +22083,18 @@ header {
   h2,
   h3 {
     page-break-after: avoid;
+  }
+}
+
+@media (width: 769px) {
+  .cnt_img {
+    height: 350px;
+  }
+}
+
+@media (width: 480px) {
+  .cnt_img {
+    height: 250px;
   }
 }
 

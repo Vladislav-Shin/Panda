@@ -14,12 +14,18 @@
   .cnt {
     &__img {
       min-width: 500px;
+      height: 400px;
       float: left;
       margin-right: 35px;
+
+      
+      @media (max-width: 650px) {
+          height: 250px;
+      }
       
       @media (max-width: 1366px) {
-        min-width: auto;
-      }
+/*         min-width: auto;
+ */      }
       @media (max-width: 1024px) {
         float: none;
         display: flex;
@@ -31,9 +37,10 @@
       }
       img {
         border-radius: 10px;
+        height: 100%;
         width: 100%;
-        height: auto;
         display: block;
+        object-fit: cover;
       }
     }
     

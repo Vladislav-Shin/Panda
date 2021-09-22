@@ -1,6 +1,11 @@
 .lab-res {
   overflow: hidden;
   font-family: "Montserrat", sans-serif;
+
+  .block__layout>div {
+    margin-bottom: 15px;
+  }
+
   &__wrapper {
     background: #f7fafe;
   }
@@ -63,8 +68,8 @@
         }
         &-icon{
           margin-bottom: 15px;
-          width: 220px;
-          height: 145px;
+          /* width: 220px; */
+          height: 170px;
         }
         &-title{
           letter-spacing: 0.004em;
