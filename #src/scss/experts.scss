@@ -35,6 +35,11 @@
   &-slide {
     width: 320px!important;
     height: auto;
+
+    img {
+      display: block;
+      margin: 0 auto;
+    }
     @media (max-width: 1440px) {
       width: 250px!important;
     }

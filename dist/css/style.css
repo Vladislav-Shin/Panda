@@ -16930,6 +16930,11 @@ picture {
   height: auto;
 }
 
+.experts__swiper-slide img {
+  display: block;
+  margin: 0 auto;
+}
+
 .experts__swiper-slide > .uk-card {
   padding: 15px 10px 11px 10px;
   border-radius: 24px;
@@ -18272,6 +18277,10 @@ picture {
 .footer .footer__content-top {
   padding-left: 0;
   padding-right: 0;
+}
+
+.footer .like__button {
+  cursor: auto;
 }
 
 .footer .like__button i {
