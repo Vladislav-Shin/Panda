@@ -1,4 +1,20 @@
 .trmnt-loc {
+
+  .block__card-btn {
+    position: relative;
+    padding: 15px 20px 15px 40px;
+
+    img {
+      display: inline-block;
+      margin-right: 10px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      top: 50%;
+      transform: translate(12px, -50%);
+    }
+  }
+
   .block__wrapper {
     margin-bottom: 70px;
   }
@@ -75,7 +91,6 @@
 
       @media (max-width: 768px) {
         font-size: 16px;
-        padding: 10px;
       }
     }
 

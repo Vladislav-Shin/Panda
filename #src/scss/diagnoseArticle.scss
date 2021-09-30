@@ -3,6 +3,16 @@
   overflow: hidden;
   font-family: "Montserrat", sans-serif;
 
+  .accord__wrapper {
+    gap: 40px;
+  }
+
+  .accordion {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
   .block__wrapper {
     padding: 48px 52px 50px 52px;
     margin-bottom: 67px;
@@ -65,6 +75,9 @@
 
   &__content {
     margin: 47px 0 20px 0;
+    max-width: 1000px;
+    width: 100%;
+    margin: 45px auto;
 
     font-size: 20px;
     line-height: 39px;

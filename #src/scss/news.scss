@@ -2,6 +2,7 @@
   width: 100%;
   padding-bottom: 50px;
   position: relative;
+
   
   &-title {
     font-family: "Poppins", sans-serif;
@@ -29,7 +30,7 @@
       width: 327px!important;
     }
     &>.uk-card {
-      height: 749px;
+     /*  height: 749px; */
       padding: 34px 32px 0 32px;
       border-radius: 43px 43px 0 0;
       background: linear-gradient(#fff 80%, rgba(255, 255, 255, 0.001));
@@ -44,7 +45,7 @@
         font-family: "Montserrat", sans-serif;
         font-style: normal;
         font-weight: bold;
-        font-size: 25px;
+        font-size: 18px;
         line-height: 153.6%;
         text-align: center;
         letter-spacing: 1px;
@@ -63,7 +64,7 @@
         font-family: "Montserrat", sans-serif;
         font-style: normal;
         font-weight: 500;
-        font-size: 18px;
+        font-size: 16px;
         line-height: 166.69%;
         margin-top: 32px;
         text-align: center;
