@@ -15473,6 +15473,11 @@ header {
           justify-content: flex-start;
 }
 
+.research_class {
+  font-size: 20px;
+  line-height: 1.4;
+}
+
 .our-lab__team .tm__card .cnt-position {
   margin-bottom: 10px;
 }
@@ -15832,6 +15837,7 @@ picture {
           align-items: center;
   gap: 12px;
   margin: 0 10px;
+  margin-left: 30px;
 }
 
 .header .header__icon li {
@@ -17197,6 +17203,12 @@ picture {
 .questions {
   padding-bottom: 131px;
   overflow: hidden;
+}
+
+.questions .uk-subnav {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .questions__title {

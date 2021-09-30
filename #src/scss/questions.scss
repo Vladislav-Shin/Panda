@@ -1,6 +1,11 @@
 .questions {
   padding-bottom: 131px;
   overflow:hidden;
+
+  .uk-subnav {
+    justify-content: center;
+  }
+
   &__title {
     margin-bottom: 73px;
   }
