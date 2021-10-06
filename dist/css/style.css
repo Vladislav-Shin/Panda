@@ -18352,8 +18352,13 @@ picture {
 }
 
 .footer__content-top > .left-side img {
-  height: 72px;
+  height: auto;
   width: 126px;
+}
+
+.footer__content-top > .left-side picture {
+  width: auto;
+  height: auto;
 }
 
 .footer__content-top > .left-side > p {
@@ -21408,7 +21413,7 @@ picture {
   }
 
   .news__swiper-slide > .uk-card img {
-    width: auto;
+    width: 100%;
     height: 280px;
   }
 
@@ -21906,6 +21911,10 @@ picture {
             align-items: center;
   }
 
+  .footer__content-top > .left-side picture {
+    margin: 0 auto;
+  }
+
   .footer__content-top > .left-side > p {
     text-align: center;
   }
@@ -21976,8 +21985,22 @@ picture {
   }
 
   .footer .footer__content-bottom {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "l r" "c c";
+  }
+
+  .footer .footer__content-bottom .footer__left {
+    grid-area: l;
+  }
+
+  .footer .footer__content-bottom .footer__right {
+    grid-area: r;
+  }
+
+  .footer .footer__content-bottom div:nth-child(2) {
+    grid-area: c;
+    margin-top: 20px;
   }
 
   .footer .footer__content-bottom .footer__right,

@@ -72,8 +72,17 @@
       }
 
       & img {
-        height: 72px;
+        height: auto;
         width: 126px;
+      }
+
+      & picture {
+        width: auto;
+        height: auto;
+        
+        @media (max-width: 514px) {
+          margin: 0 auto;
+        }
       }
 
       & > p {
@@ -433,7 +442,24 @@
 @media (max-width: 480px) {
   .footer {
     .footer__content-bottom {
-      flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: 
+      "l r"
+      "c c";
+
+      .footer__left {
+        grid-area: l;
+      }
+
+      .footer__right {
+        grid-area: r;
+      }
+
+      div:nth-child(2) {
+        grid-area: c;
+        margin-top: 20px;
+      }
 
       .footer__right,
       .footer__left {
