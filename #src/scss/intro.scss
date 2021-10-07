@@ -33,7 +33,7 @@
     }
 
     &-item {
-      background: url('../img/intro2.jpg') center/cover no-repeat;
+      background: url("../img/intro2.jpg") center/cover no-repeat;
       // background: rgba(0, 0, 0, .5);
       border-radius: 23px;
       height: 100%;
@@ -63,7 +63,7 @@
       }
 
       // ------------ карточка в 1 колонке в верхнем ряду секций -------------
-      &>.row__topSection-item {
+      & > .row__topSection-item {
         @media (max-width: 1199.98px) {
           display: flex;
           justify-content: center;
@@ -132,7 +132,7 @@
       padding-left: 0;
 
       // Первая карточка во 2ом ряду ("22года усп...")
-      &>.row__topSection-item:first-child {
+      & > .row__topSection-item:first-child {
         margin-bottom: 36px;
         background: linear-gradient(135.82deg, #ffefd8 19.8%, #f7cf99 79.6%),
           #e6ebf0;
@@ -169,7 +169,7 @@
             align-items: center;
           }
 
-          &>h1 {
+          & > h1 {
             font-family: "Poppins", sans-serif;
             font-style: normal;
             font-weight: 800;
@@ -188,7 +188,7 @@
             }
           }
 
-          &>h2 {
+          & > h2 {
             font-family: "Poppins", sans-serif;
             font-style: normal;
             font-weight: 700;
@@ -244,8 +244,9 @@
       /* </ row__topSection-item первая карточка */
 
       // вторая карточка во 2 ряду ("совр оборудование...")
-      &>.row__topSection-item:last-child {
-        background: url("../img/Computer.png") (bottom right) / contain no-repeat,
+      & > .row__topSection-item:last-child {
+        background: url("../img/Computer.png") (bottom right) / contain
+            no-repeat,
           (linear-gradient(135.82deg, #d7fff5 19.8%, #abfee5 79.6%), #e6ebf0);
 
         @media (max-width: 1199.98px) {
@@ -253,7 +254,7 @@
           justify-content: center;
         }
 
-        &>p {
+        & > p {
           font-family: "Poppins", sans-serif;
           font-style: normal;
           font-weight: bold;
@@ -290,8 +291,9 @@
         padding-left: 0;
       }
 
-      &>.row__topSection-item {
-        background: url("../img/Tasklist.png") (bottom right) / contain no-repeat,
+      & > .row__topSection-item {
+        background: url("../img/Tasklist.png") (bottom right) / contain
+            no-repeat,
           linear-gradient(135.82deg, #ffe2f3 19.8%, #f7abd1 79.6%), #e6ebf0;
 
         @media (max-width: 1199.98px) {
@@ -299,7 +301,7 @@
           justify-content: center;
         }
 
-        &>p {
+        & > p {
           font-family: "Poppins", sans-serif;
           font-style: normal;
           font-weight: bold;
@@ -352,7 +354,7 @@
         transition: transform 3s linear;
 
         &:hover {
-          transform: scale(.95);
+          transform: scale(0.95);
         }
 
         @media (max-width: 1199.98px) {
@@ -362,7 +364,7 @@
           align-items: center;
         }
 
-        &>p {
+        & > p {
           font-family: "Poppins", sans-serif;
           font-style: normal;
           font-weight: bold;
@@ -469,7 +471,7 @@
         transition: transform 3s linear;
 
         &:hover {
-          transform: scale(.95);
+          transform: scale(0.95);
         }
 
         @media (max-width: 1199.98px) {
@@ -478,7 +480,7 @@
           align-items: center;
         }
 
-        &>p {
+        & > p {
           font-family: "Poppins", sans-serif;
           font-style: normal;
           font-weight: bold;
@@ -531,10 +533,13 @@
       /* 2nd column */
       &:nth-child(2) {
         & .row__bottomSection-item {
-          background: url("../img/pillsWithoutShadow.png") (left 35px) no-repeat, #e6ebf0;
+          background: url("../img/pillsWithoutShadow.png") (left 35px) no-repeat,
+            #e6ebf0;
 
           @media (max-width: 1199.98px) {
-            background: url("../img/pillsWithoutShadow.png") left / 12vw no-repeat, #e6ebf0;
+            background: url("../img/pillsWithoutShadow.png") left / 12vw
+                no-repeat,
+              #e6ebf0;
           }
         }
       }
@@ -553,9 +558,7 @@
   }
 }
 
-
 .intro {
-
   .intro__row {
     display: flex;
     padding: 57px;
@@ -569,19 +572,18 @@
     width: 32%;
 
     &:first-child {
-      background: #C9F2FF;
+      background: #c9f2ff;
       border-radius: 23px;
       padding: 35px;
     }
 
     &:last-child {
-      background: linear-gradient(0deg, #95C1F5, #95C1F5), #E6EBF0;
+      background: linear-gradient(0deg, #95c1f5, #95c1f5), #e6ebf0;
       border-radius: 23px;
       padding: 35px;
 
-
       .intro__item-title {
-        color: #2F3EA0;
+        color: #2f3ea0;
       }
     }
 
@@ -607,14 +609,13 @@
 
   .intro-year {
     font-size: 40px;
-    color: #AA6200;
+    color: #aa6200;
   }
 
   .intro-num {
     font-size: 232px;
-    color: #F8D09A;
+    color: #f8d09a;
   }
-
 }
 
 .intro-mod {
@@ -629,11 +630,11 @@
     height: 47%;
 
     .intro__item-title {
-      color: #AA6200;
+      color: #aa6200;
     }
 
     .intro__inner-mod {
-      color: #2F3EA0;
+      color: #2f3ea0;
     }
 
     .intro__inner-content {
@@ -651,27 +652,26 @@
       font-weight: bold;
       font-size: 31px;
       line-height: 46px;
-      color: #AA6200;
+      color: #aa6200;
     }
   }
 
   .intro__item-inner {
-    background: linear-gradient(135.82deg, #FFEFD8 19.8%, #F7CF99 79.6%), #E6EBF0;
+    background: linear-gradient(135.82deg, #ffefd8 19.8%, #f7cf99 79.6%),
+      #e6ebf0;
     border-radius: 23px;
     padding: 22px;
 
     &:last-child {
-      background: linear-gradient(0deg, #E9ECFF, #E9ECFF), #E6EBF0;
-      color: #2F3EA0;
+      background: linear-gradient(0deg, #e9ecff, #e9ecff), #e6ebf0;
+      color: #2f3ea0;
     }
   }
 }
 
 @media (max-width: 1700px) {
   .intro {
-
     .intro__items {
-
       &:first-child,
       &:last-child {
         padding: 15px;
@@ -686,14 +686,12 @@
       font-size: 180px;
     }
   }
-
 }
 
 @media (max-width: 1550px) {
   .intro {
-
     .intro__items {
-      *+p {
+      * + p {
         margin: 0;
       }
     }
@@ -720,7 +718,6 @@
 
       .intro-num {
         font-size: 120px;
-
       }
     }
 
@@ -773,7 +770,6 @@
 
 @media (max-width: 950px) {
   .intro {
-
     .intro__row {
       padding: 15px;
     }
@@ -785,13 +781,11 @@
     .intro__item-inner {
       padding: 10px;
     }
-
   }
 }
 
 @media (max-width: 875px) {
   .intro {
-
     .intro__item-title {
       .intro-num {
         font-size: 80px;
@@ -822,13 +816,11 @@
         }
       }
     }
-
   }
 }
 
 @media (max-width: 745px) {
   .intro {
-
     .intro__item-content {
       height: 290px;
     }
@@ -849,7 +841,6 @@
 }
 
 @media (max-width: 610px) {
-
   .intro {
     .intro__items {
       width: 100%;

@@ -2,6 +2,22 @@
   overflow: hidden;
   font-family: "Montserrat", sans-serif;
 
+  .block__card-price {
+    overflow: scroll;
+    cursor: pointer;
+  }
+
+  .block__card-price::-webkit-scrollbar {
+    width: 0;
+    height: 5px;
+  }
+
+  .block__card-price::-webkit-scrollbar-thumb {
+    background-color: #223c50;
+    height: 10px;
+    cursor: pointer;
+}
+
   .block__layout > div {
     margin-bottom: 15px;
   }

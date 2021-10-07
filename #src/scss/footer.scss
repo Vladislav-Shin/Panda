@@ -488,6 +488,12 @@
   }
 }
 
+@media (max-width: 425px) {
+  .uk-accordion-title::before {
+    content: "";
+}
+}
+
 @media (max-width: 400px) {
   .footer__content-top > .right-side {
     width: 100%;

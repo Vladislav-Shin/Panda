@@ -1,9 +1,8 @@
 // ---------------- Акордион ------------------
 .accordion {
-
   // кнопка акордиона фильтра
   &__btns {
-    &>li {
+    & > li {
       margin-top: 5px;
     }
   }
@@ -43,7 +42,7 @@
       }
     }
 
-    .uk-open>.accordion__item-title::before {
+    .uk-open > .accordion__item-title::before {
       background-image: url("../img/minus-icon.svg");
     }
 
@@ -135,11 +134,10 @@
         }
       }
     }
-
   }
 }
 
-.uk-open>.uk-accordion-title::before {
+.uk-open > .uk-accordion-title::before {
   background-image: url("../img/minus-icon.svg");
 }
 
@@ -167,7 +165,7 @@
   .uk-subnav {
     li {
       a {
-        background: #FE5E7A;
+        background: #fe5e7a;
         box-shadow: 0px 27.0669px 79.0353px rgba(254, 94, 122, 0.31);
         border-radius: 5.41338px;
         color: #fff;
@@ -176,6 +174,39 @@
   }
 }
 
-.uk-accordion>:nth-child(n+2) {
+.uk-accordion > :nth-child(n + 2) {
   margin-top: 0;
+}
+
+@media (max-width: 425px) {
+  .uk-accordion-title::before {
+    content: "+";
+    background: none;
+  }
+
+  .uk-open > .uk-accordion-title::before {
+    content: "-";
+    background-image: none
+  }
+
+  .accord__wrapper ul li {
+    padding: 15px;
+    
+    .accordion__item-title {
+      margin-left: -45px;
+      padding-left: 60px;
+    }
+  
+    .uk-accordion-content {
+      margin-top: 10px;
+    }
+  }
+
+  .treatment-article .accord__wrapper ul li .accordion__item-title, 
+  .diagnose-article .accord__wrapper ul li .accordion__item-title {
+    margin-left: -45px;
+    padding-left: 60px;
+  }
+
+
 }

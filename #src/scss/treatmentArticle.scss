@@ -4,6 +4,18 @@
 
   .accord__wrapper {
     column-gap: 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .ta__symptoms p {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .treatment p {
+    max-width: 1100px;
+    margin: 0 auto;
   }
 
   .ta__content {
@@ -48,8 +60,8 @@
     font-size: 18px;
     text-align: center;
     cursor: pointer;
-    
-    transition: transform .5s linear;
+
+    transition: transform 0.5s linear;
     &:hover {
       color: #fff;
       text-decoration: none;
@@ -128,9 +140,3 @@
     color: #fff;
   }
 }
-
-
-
-
-
-
