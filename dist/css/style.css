@@ -17378,6 +17378,12 @@ picture {
   padding-right: 0;
 }
 
+.our-lab__specialization .our-lab__specs .card-spec {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .consult {
   padding-bottom: 136px;
 }
@@ -20294,6 +20300,13 @@ picture {
   }
 }
 
+@media (max-width: 1650px) {
+  .our-lab__specialization .our-lab__specs > * {
+    width: 33%;
+    margin-bottom: 27px;
+  }
+}
+
 @media (max-width: 1600px) {
   .no-webp .intro .row__middleSection-Clm:first-child .row__middleSection-item{
     background: url("../img/Group.png") left no-repeat, url("../img/DNA.png") right center/200px no-repeat, #e6ebf0; }
@@ -21080,6 +21093,19 @@ picture {
   .experts__swiper-title {
     font-size: 28px;
     line-height: 1.2;
+  }
+}
+
+@media (max-width: 991px) {
+  .our-lab__specialization .our-lab__specs > * {
+    width: 50%;
+    margin-bottom: 0;
+  }
+
+  .our-lab__specialization .uk-grid {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
   }
 }
 
@@ -21891,6 +21917,13 @@ picture {
   }
 }
 
+@media (max-width: 600px) {
+  .our-lab__specialization .our-lab__specs > * {
+    width: 100%;
+    margin-bottom: 0;
+  }
+}
+
 @media (max-width: 575px) {
   .our-lab__statistics-content .stat__cont-item-context-title {
     font-size: 45px;
@@ -22247,7 +22280,7 @@ picture {
     font-size: 14px;
   }
 
-  .uk-accordion-title::before {
+  .footer .uk-accordion-title::before {
     content: "";
   }
 }

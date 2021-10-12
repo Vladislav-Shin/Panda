@@ -489,9 +489,9 @@
 }
 
 @media (max-width: 425px) {
-  .uk-accordion-title::before {
+  .footer .uk-accordion-title::before {
     content: "";
-}
+  }
 }
 
 @media (max-width: 400px) {
