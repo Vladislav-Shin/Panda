@@ -16818,7 +16818,7 @@ picture {
   line-height: 60px;
   text-align: center;
   letter-spacing: 0.01em;
-  color: #2C2E31;
+  color: #2c2e31;
   margin-bottom: 30px;
 }
 
@@ -16868,7 +16868,7 @@ picture {
   line-height: 166.69%;
   margin-top: 0;
   text-align: center;
-  color: #7D7E86;
+  color: #7d7e86;
 }
 
 .news__swiper-slide > .uk-card img {
@@ -16900,7 +16900,17 @@ picture {
 }
 
 .news__swiper-pagination > .swiper-pagination-bullet-active {
-  background: #F97D5F;
+  background: #f97d5f;
+}
+
+.news__swiper-slide > .uk-card .uk-card-title {
+  line-height: 1.4;
+  margin-bottom: 15px;
+}
+
+.news__swiper-slide > .uk-card p {
+  line-height: 1.4;
+  margin-bottom: 40px;
 }
 
 .experts__swiper {
@@ -18262,6 +18272,22 @@ picture {
   position: absolute;
   top: -140px;
   right: -220px;
+}
+
+.our-lab__specialization .our-lab__specs .card-spec {
+  -webkit-box-pack: inherit;
+      -ms-flex-pack: inherit;
+          justify-content: inherit;
+  position: relative;
+}
+
+.our-lab__specialization .our-lab__specs .card-spec a {
+  position: absolute;
+  bottom: 20px;
+}
+
+.our-lab__specialization .our-lab__specs .card-spec-text {
+  margin-bottom: 45px;
 }
 
 .news {
