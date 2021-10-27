@@ -15383,60 +15383,6 @@ body._lock,
   margin: 0;
 }
 
-.block__card {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  border-radius: 29px;
-  background: #f6f9fc;
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
-  font-size: 25px;
-  line-height: 153.6%;
-  letter-spacing: 1px;
-  color: #171717;
-}
-
-.block__card-title {
-  margin-top: 28px;
-}
-
-.block__card-subtitle {
-  font-weight: 500;
-  font-size: 20px;
-}
-
-.block__card-description {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 auto;
-          flex: 1 0 auto;
-  margin-bottom: 27px;
-  margin-top: 15px;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 166.69%;
-  color: #7d7e86;
-}
-
-.block__card-pagination .uk-active span {
-  color: #fff;
-  border-radius: 20px;
-  background: #fe5e7a;
-}
-
-.block__card-btn {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
-  max-width: 176px;
-  padding: 16px 0;
-  text-align: center;
-}
-
 .block__tag {
   background: #fe5e7a;
   border-radius: 20px;
@@ -15600,14 +15546,68 @@ header {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 18px;
-  line-height: 166.69%;
-  padding: 16px 34px;
+  line-height: 1.3;
+  padding: 12px 34px;
   color: #ffffff;
   -webkit-transition: background-color 0.5s linear, -webkit-box-shadow 0.5s linear;
   transition: background-color 0.5s linear, -webkit-box-shadow 0.5s linear;
   -o-transition: box-shadow 0.5s linear, background-color 0.5s linear;
   transition: box-shadow 0.5s linear, background-color 0.5s linear;
   transition: box-shadow 0.5s linear, background-color 0.5s linear, -webkit-box-shadow 0.5s linear;
+}
+
+.block__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 29px;
+  background: #f6f9fc;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 153.6%;
+  letter-spacing: 1px;
+  color: #171717;
+}
+
+.block__card-title {
+  margin-top: 28px;
+}
+
+.block__card-subtitle {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.block__card-description {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  margin-bottom: 27px;
+  margin-top: 15px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 166.69%;
+  color: #7d7e86;
+}
+
+.block__card-pagination .uk-active span {
+  color: #fff;
+  border-radius: 20px;
+  background: #fe5e7a;
+}
+
+.block__card-btn {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  max-width: 220px;
+  padding: 16px 12px;
+  text-align: center;
 }
 
 img {
@@ -17679,7 +17679,7 @@ picture {
 }
 
 .lab-res .block__card-price {
-  overflow: scroll;
+  overflow: hidden;
   cursor: pointer;
 }
 
@@ -17808,7 +17808,7 @@ picture {
   padding-right: 10px;
   border-radius: 8px;
   margin-right: 16px;
-  max-width: 176px;
+  max-width: 190px;
   white-space: nowrap;
   font-weight: 600;
   font-size: 21px;
@@ -21343,14 +21343,6 @@ picture {
     padding: 25px 25px 40px 25px;
   }
 
-  .block__card-subtitle {
-    font-size: 14px;
-  }
-
-  .block__card-description {
-    font-size: 14px;
-  }
-
   .anim__background-mask {
     left: -30px;
   }
@@ -21367,6 +21359,14 @@ picture {
   .anim__background-cloud img {
     width: 22vw;
     height: auto;
+  }
+
+  .block__card-subtitle {
+    font-size: 14px;
+  }
+
+  .block__card-description {
+    font-size: 14px;
   }
 
   .accordion__items-element .accordion__item-title,

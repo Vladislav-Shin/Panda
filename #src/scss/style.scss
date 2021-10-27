@@ -97,75 +97,7 @@ body._lock,
   margin: 0;
 }
 
-// card
-.block__card {
-  display: flex;
-  flex-direction: column;
-  border-radius: 29px;
-  background: #f6f9fc;
 
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
-  font-size: 25px;
-  line-height: 153.6%;
-  letter-spacing: 1px;
-  color: #171717;
-
-  @media (min-width: 767.9px) {
-    padding: 44px 41px;
-  }
-
-  &-title {
-    margin-top: 28px;
-
-    @media (max-width: 1024px) {
-      font-size: 20px;
-      line-height: 1.1;
-      margin-top: 15px;
-    }
-  }
-
-  &-subtitle {
-    font-weight: 500;
-    font-size: 20px;
-
-    @media (max-width: 768px) {
-      font-size: 14px;
-    }
-  }
-
-  &-description {
-    flex: 1 0 auto;
-    margin-bottom: 27px;
-    margin-top: 15px;
-
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 166.69%;
-    color: #7d7e86;
-
-    @media (max-width: 768px) {
-      font-size: 14px;
-    }
-  }
-
-  &-pagination {
-    & .uk-active {
-      & span {
-        color: #fff;
-        border-radius: 20px;
-        background: #fe5e7a;
-      }
-    }
-  }
-
-  &-btn {
-    flex: 0 0 auto;
-    max-width: 176px;
-    padding: 16px 0;
-    text-align: center;
-  }
-}
 
 .block__tag {
   background: #fe5e7a;
@@ -351,9 +283,9 @@ header {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 18px;
-  line-height: 166.69%;
+  line-height: 1.3;
 
-  padding: 16px 34px;
+  padding: 12px 34px;
   color: #ffffff;
   transition: box-shadow 0.5s linear, background-color 0.5s linear;
 
@@ -365,6 +297,76 @@ header {
     &:hover {
       box-shadow: 0px 5px 10px rgba(36, 36, 36, 0.31);
     }
+  }
+}
+
+// card
+.block__card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 29px;
+  background: #f6f9fc;
+
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 153.6%;
+  letter-spacing: 1px;
+  color: #171717;
+
+  @media (min-width: 767.9px) {
+    padding: 44px 41px;
+  }
+
+  &-title {
+    margin-top: 28px;
+
+    @media (max-width: 1024px) {
+      font-size: 20px;
+      line-height: 1.1;
+      margin-top: 15px;
+    }
+  }
+
+  &-subtitle {
+    font-weight: 500;
+    font-size: 20px;
+
+    @media (max-width: 768px) {
+      font-size: 14px;
+    }
+  }
+
+  &-description {
+    flex: 1 0 auto;
+    margin-bottom: 27px;
+    margin-top: 15px;
+
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 166.69%;
+    color: #7d7e86;
+
+    @media (max-width: 768px) {
+      font-size: 14px;
+    }
+  }
+
+  &-pagination {
+    & .uk-active {
+      & span {
+        color: #fff;
+        border-radius: 20px;
+        background: #fe5e7a;
+      }
+    }
+  }
+
+  &-btn {
+    flex: 0 0 auto;
+    max-width: 220px;
+    padding: 16px 12px;
+    text-align: center;
   }
 }
 

@@ -3,7 +3,7 @@
   font-family: "Montserrat", sans-serif;
 
   .block__card-price {
-    overflow: scroll;
+    overflow: hidden;
     cursor: pointer;
   }
 
@@ -168,7 +168,7 @@
       padding-right: 10px;
       border-radius: 8px;
       margin-right: 16px;
-      max-width: 176px;
+      max-width: 190px;
 
       white-space: nowrap;
       font-weight: 600;
